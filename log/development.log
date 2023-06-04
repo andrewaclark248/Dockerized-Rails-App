@@ -1,0 +1,17 @@
+Started GET "/" for 172.21.0.1 at 2023-06-04 22:33:58 +0000
+Started GET "/" for 172.21.0.1 at 2023-06-04 22:33:58 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (49.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendering /usr/local/bundle/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.6ms | Allocations: 579)
+Completed 200 OK in 139ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+  Rendered /usr/local/bundle/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 406)
+Completed 200 OK in 129ms (Views: 61.3ms | ActiveRecord: 0.0ms | Allocations: 4688)
+
+
