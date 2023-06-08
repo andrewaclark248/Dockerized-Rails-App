@@ -3,18 +3,28 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_USER: postgres
+      POSTGRES_DB: dockerized_rails_app
+      POSTGRES_USER: aclark
       POSTGRES_PASSWORD: password
     volumes:
       - postgres:/var/lib/postgresql/data
+    networks:
+      - common-net
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-    volumes:
-      - .:/Dockerized-Rails-App
+   # volumes:
+   #   - .:/Dockerized-Rails-App
     ports:
       - "3000:3000"
     depends_on:
       - db
+    networks:
+      - common-net
+
 volumes:
   postgres:
+
+
+networks:
+  common-net: {}
