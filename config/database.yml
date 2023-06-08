@@ -10,16 +10,24 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.sqlite3
+  #url: postgres://db:5432
+  host: db 
+  adapter: postgresql
+  encoding: unicode
+  database: dockerized_rails_app
+  username: aclark
+  password: password
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
   <<: *default
-  database: db/test.sqlite3
+
+
 
 production:
+  url: <%= ENV['DATABASE_URL'] %>
   <<: *default
-  database: db/production.sqlite3
