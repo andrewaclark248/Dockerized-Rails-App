@@ -19,6 +19,17 @@ services:
       - db
     networks:
       - common-net
+    build: .
+    # This is the one that makes the magic
+    volumes:
+    - "./:/var/www//Dockerized-Rails-App"
+    #x-develop:
+    #  watch:
+    #    - action: sync
+    #      path: ./web
+    #      target: /app
+    #      ignore:
+    #        - node_modules/
 
 volumes:
   postgres:
