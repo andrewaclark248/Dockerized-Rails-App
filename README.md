@@ -8,3 +8,6 @@ docker compose up --build
 
 # run migrations
 docker exec web_container_id rake db:migrate
+
+# run seed file
+docker exec web_container_id rake db:seed
