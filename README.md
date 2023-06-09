@@ -14,3 +14,10 @@ docker exec web_container_id rails db:seed
 
 # enter container
 docker exec -it container_id bash
+
+
+# features
+seed data
+Persist data in db
+File Watch
+Deployable to heroku
