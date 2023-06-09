@@ -14,12 +14,9 @@ RUN mkdir -p $RAILS_ROOT
 # all the contents are going to be stored. 
 WORKDIR $RAILS_ROOT
 
-
 COPY . .
 
 RUN gem install bundler && bundle install --jobs=3 --retry=3 
-
-WORKDIR /var/www//Dockerized-Rails-App
 
 EXPOSE 3000
 
