@@ -20,4 +20,4 @@ docker exec -it container_id bash
 - seed data
 - Persist data in db
 - File Watch
-- Deployable to heroku
+- Deployable to heroku via heroku.yml
