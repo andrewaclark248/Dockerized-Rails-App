@@ -19,6 +19,10 @@ services:
       - db
     networks:
       - common-net
+    build: .
+    # This is the one that makes the magic
+    volumes:
+    - "./:/var/www/"
 
 volumes:
   postgres:
