@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Start App
+docker compose up
 
-Things you may want to cover:
+# Rebuild app upon changes to docker config
+docker compose up --build
 
-* Ruby version
+# run migrations
+docker exec web_container_id rake db:migrate
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# run seed file
+docker exec web_container_id rake db:seed
