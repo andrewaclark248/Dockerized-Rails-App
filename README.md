@@ -11,3 +11,6 @@ docker exec web_container_id rake db:migrate
 
 # run seed file
 docker exec web_container_id rails db:seed
+
+# enter container
+docker exec -it container_id bash
