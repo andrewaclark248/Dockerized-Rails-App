@@ -1,5 +1,5 @@
 # README
-
+dockerized rails app that is deployable to heroku
 # Start App
 docker compose up
 
